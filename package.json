@@ -1,18 +1,18 @@
 {
-  "name": "find-zipcode-brazil",
+  "name": "find-address-by-zipcode-brazil",
   "version": "1.0.0",
   "description": "Find an address through zip code in Brazil territory",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bamachadu/find-zipcode-brazil.git"
+    "url": "git+https://github.com/bamachadu/find-address-by-zipcode-brazil.git"
   },
   "author": "Breno Machado",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bamachadu/find-zipcode-brazil/issues"
+    "url": "https://github.com/bamachadu/find-address-by-zipcode-brazil/issues"
   },
-  "homepage": "https://github.com/bamachadu/find-zipcode-brazil#readme",
+  "homepage": "https://github.com/bamachadu/find-address-by-zipcode-brazil#readme",
   "scripts": {
     "build": "tsc",
     "build:rimraf": "rimraf dist && tsc",

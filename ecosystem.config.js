@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: "find-zipcode-brazil",
+    name: "find-address-by-zipcode-brazil",
     script: "./index.js",
     env: {
       NODE_ENV: "development",
