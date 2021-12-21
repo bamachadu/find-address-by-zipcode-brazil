@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist/",
+    "paths": {
+      "@common/*": ["src/common/*"],
+      "data/*": ["src/fundraising/data/*"],
+      "domain/*": ["src/fundraising/domain/*"],
+      "main/*": ["src/fundraising/main/*"],
+      "presentation/*": ["src/fundraising/presentation/*"],
+      "@infra/*": ["src/infra/*"],
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "dist/"
+  ]
+}

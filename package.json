@@ -1,0 +1,59 @@
+{
+  "name": "find-zipcode-brazil",
+  "version": "1.0.0",
+  "description": "Find an address through zip code in Brazil territory",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamachadu/find-zipcode-brazil.git"
+  },
+  "author": "Breno Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bamachadu/find-zipcode-brazil/issues"
+  },
+  "homepage": "https://github.com/bamachadu/find-zipcode-brazil#readme",
+  "scripts": {
+    "build": "tsc",
+    "build:rimraf": "rimraf dist && tsc",
+    "dev": "ts-node-dev --respawn ./src/main/index.ts",
+    "format": "prettier \"src/**/*.{ts,js}\" --write",
+    "start": "nodemon",
+    "start:prod": "node dist/index.js",
+    "start:watch": "npm run build && node --inspect=5860 -r ts-node/register ./src/index.ts",
+    "lint": "eslint --ext .ts .",
+    "test": "jest --no-cache",
+    "test:coverage": "jest --no-cache --coverage -u",
+    "test:watch": "jest --no-cache --watch ",
+    "test:no-watch": "jest --no-cache --watchAll"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "prisma": "^3.5.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^3.5.0",
+    "@types/express": "^4.17.12",
+    "@types/express-correlation-id": "^1.2.2",
+    "@types/jest": "~26.0.13",
+    "@types/node": "^15.12.5",
+    "dotenv": "^10.0.0",
+    "jest": "^26.4.2",
+    "jest-watch-typeahead": "^0.6.4",
+    "module-alias": "^2.2.2",
+    "ts-jest": "~24.3.0",
+    "ts-node": "~8.9.1",
+    "ts-node-dev": "^1.0.0-pre.52",
+    "typescript": "^4.3.5"
+  },
+  "_moduleAliases": {
+    "@common": "dist/common",
+    "data": "dist/data",
+    "domain": "dist/domain",
+    "main": "dist/main",
+    "@infra": "dist/infra"
+  },
+  "prisma": {
+    "schema": "src/infra/prisma/schema.prisma"
+  }
+}
