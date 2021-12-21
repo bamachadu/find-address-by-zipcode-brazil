@@ -1,5 +1,5 @@
 # find-cep
-Find an address through zip code
+Find an address through zip code in Brazil territory
 
 ##Parameters
  - zipCode: number 
