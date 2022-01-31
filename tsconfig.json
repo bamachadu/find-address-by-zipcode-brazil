@@ -6,16 +6,16 @@
     "moduleResolution": "node",
     "outDir": "dist/",
     "paths": {
-      "@common/*": ["src/common/*"],
-      "data/*": ["src/data/*"],
-      "domain/*": ["src/domain/*"],
-      "main/*": ["src/main/*"],
-      "presentation/*": ["src/presentation/*"],
+      "@data/*": ["src/data/*"],
+      "@domain/*": ["src/domain/*"],
       "@infra/*": ["src/infra/*"],
+      "@main/*": ["src/main/*"],
+      "@presentation/*": ["src/presentation/*"],
+      "@test/*": ["src/test/*"],
     },
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2020"
+    "target": "ES2021"
   },
   "include": [
     "src/**/*.ts"

@@ -13,7 +13,7 @@ module.exports = {
       lines: 100,
     },
   },
-  roots: ['<rootDir>/test'],
+  roots: ['<rootDir>/src'],
   testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
@@ -24,12 +24,12 @@ module.exports = {
     "node_modules"
   ],
   moduleNameMapper: {
-    '@common/(.*)': '<rootDir>/src/common/$1',
     '@data/(.*)': '<rootDir>/src/data/$1',
     '@domain/(.*)': '<rootDir>/src/domain/$1',
+    '@infra/(.*)': '<rootDir>/src/infra/$1',
     '@main/(.*)': '<rootDir>/src/main/$1',
     '@presentation/(.*)': '<rootDir>/src/presentation/$1',
-    '@infra/(.*)': '<rootDir>/src/infra/$1',
+    '@test/(.*)': '<rootDir>/src/test/$1',
   },
   verbose: true,
   watchPlugins: [
